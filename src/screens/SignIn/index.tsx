@@ -3,8 +3,7 @@ import {
     View, 
     Text, 
     TextInput,
-    Image,
-    StatusBar } from 'react-native'
+    Image } from 'react-native'
 
 
 import { ButtonIcon } from '../../components/ButtonIcon'; 
@@ -13,16 +12,12 @@ import { styles } from './styles';
 
 export function SignIn(){
 
-    /*Um estado criada para armazenar o valor do input*/
+    // Um estado criada para armazenar o valor do input
     const [text, setText] = useState('');
 
 
     return(
         <View style={styles.container}>
-            <StatusBar 
-            barStyle="light-content"
-            backgroundColor="transparent"
-            translucent/>
 
             <Image source={IlustrationImg} 
             style={styles.image}
@@ -30,15 +25,17 @@ export function SignIn(){
 
             <View style={styles.content}>
                 <Text style={styles.title}>
-                    Organize seus jogos {`\n`}
+                    Have a better view {`\n`}
+                    of you gameplays.
                 </Text>
 
                 <Text style={styles.subtitle}>
-                    Crie grupos para jogar jogos
+                    Make friends and create {`\n`}
+                    group with them.
                 </Text>
 
                 <ButtonIcon 
-                    title="Entrar com Discord"
+                    title="Sign In with Discord"
                     activeOpacity={0.7}/>
             </View>
         </View>

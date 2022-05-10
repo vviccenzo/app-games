@@ -1,5 +1,5 @@
 import React from 'react';
-import { SignIn } from './src/screens/SignIn';
+
 
 import AppLoading  from 'expo-app-loading'
 
@@ -10,7 +10,8 @@ import { Rajdhani_500Medium, Rajdhani_700Bold} from '@expo-google-fonts/rajdhani
 import { StatusBar } from 'react-native';
 
 import { Background } from './src/components/Background';
-  
+import { SignIn } from './src/screens/SignIn';
+import { Home } from './src/screens/Home';
 export default function App(){
 
   // Exportar fontes
@@ -31,7 +32,7 @@ export default function App(){
         barStyle="light-content"
         backgroundColor="transparent"
         translucent/>
-      <SignIn />
+      <Home />
     </Background>
   );
 }

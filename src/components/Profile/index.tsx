@@ -1,0 +1,30 @@
+import React from 'react';
+
+import { View, Text } from 'react-native';
+import { Avatar } from '../Avatar';
+import { styles } from './styles';
+
+export function Profile(){
+    return (
+        <View style={styles.container}>
+
+            <Avatar urlImage="https://github.com/vviccenzo.png"/>
+
+            <View>
+                <View style={styles.user}>
+                    <Text style={styles.greeting}>
+                        Hello
+                    </Text>
+                </View>
+
+                <Text style={styles.username}>
+                    Vini,
+                </Text>
+
+                <Text style={styles.message}>
+                    Today, is day to win.
+                </Text>
+            </View>
+        </View>
+    );
+}

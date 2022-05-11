@@ -13,13 +13,13 @@ export function Profile(){
             <View>
                 <View style={styles.user}>
                     <Text style={styles.greeting}>
-                        Hello
+                        Hello,
+                    </Text>
+                
+                    <Text style={styles.username}>
+                        Vini
                     </Text>
                 </View>
-
-                <Text style={styles.username}>
-                    Vini,
-                </Text>
 
                 <Text style={styles.message}>
                     Today, is day to win.

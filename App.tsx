@@ -12,6 +12,8 @@ import { StatusBar } from 'react-native';
 import { Background } from './src/components/Background';
 import { SignIn } from './src/screens/SignIn';
 import { Home } from './src/screens/Home';
+
+import { Routes } from './src/routes';
 export default function App(){
 
   // Exportar fontes
@@ -32,7 +34,7 @@ export default function App(){
         barStyle="light-content"
         backgroundColor="transparent"
         translucent/>
-      <Home />
+      <Routes />
     </Background>
   );
 }
